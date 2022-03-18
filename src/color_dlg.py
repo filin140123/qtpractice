@@ -11,6 +11,7 @@ class DlgMain(QDialog):
         self.resize(200, 300)
 
         self.btn_color = QPushButton('Choose Color', self)
+        self.btn_color.setIcon(QIcon(QPixmap('pics/pallete.png')))
         self.btn_color.move(20, 30)
         self.btn_color.clicked.connect(self.evt_btn_color_clicked)
 
@@ -19,6 +20,7 @@ class DlgMain(QDialog):
         self.lbl_rslt.move(20, 60)
 
         self.btn_font = QPushButton('Choose Font', self)
+        self.btn_font.setIcon(QIcon(QPixmap('pics/fonts.png')))
         self.btn_font.move(20, 100)
         self.btn_font.clicked.connect(self.evt_btn_font_clicked)
 
